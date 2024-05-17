@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "detail": "Build workspace (Windows, Iron)",
+            "type": "shell",
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": [
+                            "-NoProfile",
+                            "-ExecutionPolicy",
+                            "Bypass",
+                            "-Command"
+                        ]
+                    }
+                },
+                "command": "",
+                "args": [
+                    { "value": "$instanceId = & '${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe' -property instanceId;", "quoting": "weak" },
+                    { "value": "Import-Module '${env:ProgramFiles(x86)}/Microsoft Visual Studio/2019/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll';", "quoting": "weak"},
+                    { "value": "Enter-VsDevShell $instanceId -SkipAutomaticLocation;", "quoting": "weak" },
+                    { "value": ". c:/dev/ros2_iron/local_setup.ps1;", "quoting": "weak"},
+                    { "value": ". .venv/Scripts/activate.ps1;", "quoting": "weak"},
+                    { "value": "colcon build --cmake-args -DPython3_FIND_VIRTUALENV='ONLY' --event-handlers desktop_notification-", "quoting": "weak"}
+                ]
+            },
+            "options": {
+                "env": {
+                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ],
+}

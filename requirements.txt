@@ -1,0 +1,21 @@
+setuptools==59.6.0
+colcon-common-extensions
+catkin_pkg
+cryptography
+empy==3.3.4
+importlib-metadata
+jsonschema
+lark==1.1.1
+lxml
+matplotlib
+netifaces
+# numpy
+opencv-python
+PyQt5
+pillow
+psutil
+pycairo
+pydot
+pyparsing==2.4.7
+pyyaml
+rosdistro
