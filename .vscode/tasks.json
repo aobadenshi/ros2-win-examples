@@ -39,5 +39,73 @@
                 "isDefault": true
             }
         },
+        {
+            "label": "publisher",
+            "detail": "Run publisher",
+            "type": "shell",
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": [
+                            "-NoProfile",
+                            "-ExecutionPolicy",
+                            "Bypass",
+                            "-Command"
+                        ]
+                    }
+                },
+                "command": "",
+                "args": [
+                    { "value": ". install/setup.ps1;", "quoting": "weak"},
+                    { "value": ". .venv/Scripts/activate.ps1;", "quoting": "weak"},
+                    { "value": "ros2 run examples_rclcpp_minimal_publisher publisher_lambda", "quoting": "weak"}
+                ]
+            },
+            "options": {
+                "env": {
+                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                    "PYTHONPATH": ".venv/lib/site-packages;${env.PYTHONPATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "subscriber",
+            "detail": "Run subscriber",
+            "type": "shell",
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": [
+                            "-NoProfile",
+                            "-ExecutionPolicy",
+                            "Bypass",
+                            "-Command"
+                        ]
+                    }
+                },
+                "command": "",
+                "args": [
+                    { "value": ". install/setup.ps1;", "quoting": "weak"},
+                    { "value": ". .venv/Scripts/activate.ps1;", "quoting": "weak"},
+                    { "value": "ros2 run examples_rclpy_minimal_subscriber subscriber_lambda", "quoting": "weak"}
+                ]
+            },
+            "options": {
+                "env": {
+                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                    "PYTHONPATH": ".venv/lib/site-packages;${env.PYTHONPATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
     ],
 }
