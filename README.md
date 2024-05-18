@@ -40,6 +40,6 @@ Run following command on "Developer console of Visual Studio":
 
 ```
 . C:/dev/ros2_iron/local_setup.ps1
-. .venv/Scripts/activates.ps1
+. .venv/Scripts/Activate.ps1
 colcon build --cmake-args -DPython3_FIND_VIRTUALENV="ONLY" --event-handlers desktop_notification-
 ```
