@@ -65,7 +65,7 @@
             "options": {
                 "env": {
                     "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
-                    "PYTHONPATH": ".venv/lib/site-packages;${env.PYTHONPATH}"
+                    "PYTHONPATH": ".venv/lib/site-packages;${env:PYTHONPATH}"
                 }
             },
             "group": {
@@ -99,7 +99,7 @@
             "options": {
                 "env": {
                     "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
-                    "PYTHONPATH": ".venv/lib/site-packages;${env.PYTHONPATH}"
+                    "PYTHONPATH": ".venv/lib/site-packages;${env:PYTHONPATH}"
                 }
             },
             "group": {
