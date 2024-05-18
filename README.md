@@ -1,6 +1,6 @@
 # ROS2 Windows template for VSCode
 
-Windows の VSCode で ROS2 Iron を使うためのひな形。
+Windows の VSCode で ROS2 Iron を扱うためのひな形。
 このリポジトリではテストとして、[ros2/examples](https://github.com/ros2/examples/tree/iron) をビルド・実行できる。
 
 
@@ -21,7 +21,7 @@ pip install numpy
 
 - ワークスペースファイル `ros2-win-examples.code-workspace` で開く。
 - ワークスペースの推奨パッケージを有効化する。
-- `Ctrl + Shift + P` で `Python: Create Environment...` で venv 環境を作成。その際 requirements.txt で必要なパッケージをインストールする。
+- `Ctrl + Shift + P` で `Python: Create Environment...` で venv 環境を作成。PythonバージョンはIronの場合は3.8.xを選択する。requirements.txt で必要なパッケージをインストールする。
 - `ターミナル(T)` -> `タスクの実行...` -> `build` でビルド実行。
 
 ## コマンドラインの場合
