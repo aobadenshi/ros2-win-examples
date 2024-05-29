@@ -1,12 +1,12 @@
 # ROS2 Windows template for VSCode
 
-Windows の VSCode で ROS2 Iron を扱うためのひな形。
-このリポジトリではテストとして、[ros2/examples](https://github.com/ros2/examples/tree/iron) をビルド・実行できる。
+Windows の VSCode で ROS2 humble を扱うためのひな形。
+このリポジトリでは例として、[ros2/examples](https://github.com/ros2/examples/tree/humble) をビルド・実行できる。
 
 
 ## ROS のセットアップ
 
-[Windows (binary)](https://docs.ros.org/en/iron/Installation/Windows-Install-Binary.html) の手順にしたがう。
+[Windows (binary)](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html) の手順にしたがう。
 
 
 ## その他ライブラリ
@@ -21,7 +21,7 @@ pip install numpy
 
 - ワークスペースファイル `ros2-win-examples.code-workspace` で開く。
 - ワークスペースの推奨パッケージを有効化する。
-- `Ctrl + Shift + P` で `Python: Create Environment...` で venv 環境を作成。PythonバージョンはIronの場合は3.8.xを選択する。requirements.txt で必要なパッケージをインストールする。
+- `Ctrl + Shift + P` で `Python: Create Envhumblement...` で venv 環境を作成。Pythonバージョンはhumbleの場合は3.8.xを選択する。requirements.txt で必要なパッケージをインストールする。
 - `ターミナル(T)` -> `タスクの実行...` -> `build` でビルド実行。
 
 ## コマンドラインの場合
@@ -39,7 +39,7 @@ python -m venv .venv --system-site-packages
 Run following command on "Developer console of Visual Studio":
 
 ```
-. C:/dev/ros2_iron/local_setup.ps1
+. C:/dev/ros2_humble/local_setup.ps1
 . .venv/Scripts/Activate.ps1
 colcon build --cmake-args -DPython3_FIND_VIRTUALENV="ONLY" --event-handlers desktop_notification-
 ```

@@ -2,9 +2,9 @@
     "editor.tabSize": 4,
     // Autocomplete from ros python packages
     "python.autoComplete.extraPaths": [
-        "C:/dev/ros2_iron/Lib/site-packages"
+        "C:/dev/ros2_humble/Lib/site-packages"
     ],
     "python.analysis.extraPaths": [
-        "C:/dev/ros2_iron/Lib/site-packages"
+        "C:/dev/ros2_humble/Lib/site-packages"
     ],
 }

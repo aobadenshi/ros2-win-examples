@@ -7,7 +7,7 @@
         //     "name": "Linux",
         //     "includePath": [
         //         "${workspaceFolder}/**",
-        //         "/opt/ros/iron/include/**",
+        //         "/opt/ros/humble/include/**",
         //         "/usr/include/**"
         //     ],
         //     "defines": [],
@@ -25,7 +25,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/dev/ros2_iron/include/**",
+                "C:/dev/ros2_humble/include/**",
                 "${env:OpenCV_DIR}/include/**",
                 "${env:Qt5_DIR}/include",
                 "C:/xmllint/include"

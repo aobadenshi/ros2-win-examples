@@ -5,7 +5,7 @@
     "tasks": [
         {
             "label": "build",
-            "detail": "Build workspace (Windows, Iron)",
+            "detail": "Build workspace (Windows, Humble)",
             "type": "shell",
             "windows": {
                 "options": {
@@ -24,14 +24,14 @@
                     { "value": "$instanceId = & '${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vswhere.exe' -property instanceId;", "quoting": "weak" },
                     { "value": "Import-Module '${env:ProgramFiles(x86)}/Microsoft Visual Studio/2019/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll';", "quoting": "weak"},
                     { "value": "Enter-VsDevShell $instanceId -SkipAutomaticLocation;", "quoting": "weak" },
-                    { "value": ". c:/dev/ros2_iron/local_setup.ps1;", "quoting": "weak"},
+                    { "value": ". c:/dev/ros2_humble/local_setup.ps1;", "quoting": "weak"},
                     { "value": ". .venv/Scripts/activate.ps1;", "quoting": "weak"},
                     { "value": "colcon build --cmake-args -DPython3_FIND_VIRTUALENV='ONLY' --event-handlers desktop_notification-", "quoting": "weak"}
                 ]
             },
             "options": {
                 "env": {
-                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                    "PATH": "C:/dev/ros2_humble/bin;C:/Program Files/CMake/bin;${env:PATH}",
                 }
             },
             "group": {
@@ -64,7 +64,7 @@
             },
             "options": {
                 "env": {
-                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                    "PATH": "C:/dev/ros2_humble/bin;C:/Program Files/CMake/bin;${env:PATH}",
                     "PYTHONPATH": ".venv/lib/site-packages;${env:PYTHONPATH}"
                 }
             },
@@ -98,7 +98,7 @@
             },
             "options": {
                 "env": {
-                    "PATH": "C:/dev/ros2_iron/bin;C:/Program Files/CMake/bin;${env:PATH}",
+                    "PATH": "C:/dev/ros2_humble/bin;C:/Program Files/CMake/bin;${env:PATH}",
                     "PYTHONPATH": ".venv/lib/site-packages;${env:PYTHONPATH}"
                 }
             },
