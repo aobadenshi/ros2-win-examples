@@ -1,7 +1,7 @@
 # ROS2 Windows template for VSCode
 
 Windows の VSCode で ROS2 Iron を扱うためのひな形。
-このリポジトリではテストとして、[ros2/examples](https://github.com/ros2/examples/tree/iron) をビルド・実行できる。
+このリポジトリでは例として、[ros2/examples](https://github.com/ros2/examples/tree/iron) をビルド・実行できる。
 
 
 ## ROS のセットアップ
